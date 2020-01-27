@@ -1,0 +1,30 @@
+--------
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/tahmaz/test2.git
+git push -u origin master
+---------
+
+cd c:/Users/tahmaz/scripts/git/test
+git init
+git config --global user.name 'Tahmaz Huseynov'
+git config --global user.email 'test@gmail.com'
+git config --global core.editor "vim"
+
+git status
+git rm --cached *
+git add .
+git commit -m "changed comment"
+
+//for git add . we can exception for log.txt. Write log.txt to .gitignore file
+touch .gitignore
+touch log.txt
+
+vi .gitignore
+log.txt
+/logs
+:wq!
+
+git add . // now you cant see log.txt
+
